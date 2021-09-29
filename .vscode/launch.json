@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Typescript",
+      //"protocol": "inspector",
+      //"sourceMaps": true,
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "program": "${file}", //"${workspaceRoot}/test.ts",
+      "outFiles": ["${workspaceRoot}/TS_to_JS_Converted Codes/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Launch",
+      "address": "localhost",
+      "port": 5858,
+      "outFiles": []
+    }
+  ]
+}
