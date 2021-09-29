@@ -1,2 +1,2 @@
 // the hello world program
-console.log("hello world");
+console.("hello world");
